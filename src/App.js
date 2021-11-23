@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
@@ -8,6 +8,7 @@ import { useStateValue } from './components/StateProvider';
 import Login from './components/Login/Login';
 
 function App() {
+  // eslint-disable-next-line
   const [{ user }, dispatch] = useStateValue();
 
   return (
